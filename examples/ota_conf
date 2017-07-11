@@ -1,0 +1,38 @@
+#
+# OTA XML
+#
+#
+# Note:
+# * Multiple devices can be added in the xml file
+# * You can define any tags that end with 'Url'. These tags will be added in the UI automatically 
+#
+ota_url=https://github.com/Anandnv/AIMOTA_CONF/blob/master/aim_ota.xml
+release_type=Stable
+device_name=ro.aim.device
+
+#
+# VERSION
+#
+# A version can be a date or a number with characters
+# A version source can be a 'property key' from build.prop or a 'uname -r' command line
+# If a version is a number, leave the version_format empty. Otherwise, provide the date format
+#
+# Example with a property key 'ro.modversion' : Parse the date 20150426 from 'cynogenmod-13.0-20150426'
+# AIM-System-V2.0_20170711-OFFICIAL-Z010D
+# 
+# Version source: ro.aim.display.version
+# Version delimiter: -
+# Version position: 3 (zero based)
+# Version format: yyyyMMdd
+#
+# Example with 'uname -r': Parse the number 239 from '3.4.107~AK.239.OPO.CM12.1'
+#
+# Version source: uname -r
+# Version delimiter: .
+# Version position: 3 (zero based)
+# Version format:
+#AIM-System-V2.0-20170711-OFFICIAL-Z010D
+version_source=ro.aim.display.version
+version_delimiter=-
+version_position=3
+version_format=yyyyMMdd

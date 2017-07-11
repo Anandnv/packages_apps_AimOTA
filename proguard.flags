@@ -1,11 +1,1 @@
--keep class com.cyanogenmod.updater.UpdatesSettings {
-  *;
-}
--keep class android.support.design.widget.** { *; }
--keep interface android.support.design.widget.** { *; }
--keep public class android.support.v7.preference.Preference { *; }
--keep public class * extends android.support.v7.preference.Preference { *; }
-
-# Needed when building against the Marshmallow SDK
--dontwarn com.android.**
--dontwarn android.support.**
+-keep class com.anand.aimota.core.OTAListener
